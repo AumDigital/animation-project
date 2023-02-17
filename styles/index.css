@@ -9,10 +9,148 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: 'Gloria Hallelujah', cursive;
+    background-color:var(--green-transparent);
     width: 100%;
-    --main-color: #87DDD3;
+    
+    --main-color: #0a2421;
     --second-color: #54E294;
+    --third-color: #3e5848;
+    --fourth-color: rgba(201, 242, 155, 1);
     --neon: #39FF14;
+    --green-transparent: rgba(38, 183, 132, 0.4);
     
 
 }
+
+.background-image {
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 90vh;
+    max-height: 90vh;
+    z-index: -1;
+    top: 0;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    border-bottom: solid 4px var(--main-color);
+
+}
+
+nav {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100px;
+    color: var(--main-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 3px solid var(--main-color);
+    background-color:rgba(38, 183, 132, 0.4);
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: auto;
+
+}
+
+nav li {
+    display: flex;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: inherit;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+.logo-name {
+    font-size: 60px;
+    display: flex;
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.title-container {
+    position: static;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    z-index: 1;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 64px;
+    color: var(--third-color);
+    text-shadow: 4px 8px rgba(140, 226, 196, 0.765);
+
+}
+
+.section-container {
+    position:absolute;
+    top: -75px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    
+  }
+
+
+.image-box {
+    display:flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border: solid 4px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+
+    
+   
+  }
+
+.info-box {
+    display:flex;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    border: solid 4px;
+    color: var(--main-color);
+    background-color: var(--fourth-color);
+    padding: 10px;
+  
+  }
+
